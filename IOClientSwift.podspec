@@ -10,6 +10,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "Bhavesh Bhojani" => "bhavesh@imageopt.com" }
   spec.ios.deployment_target = "9.0"
   spec.tvos.deployment_target = "9.0"
+  spec.swift_versions = "5"
   spec.source       = { :git => "https://github.com/imgopt/IOClientSwift/IOClientSwift.git", :tag => "#{spec.version}" }
   spec.source_files  = "Sources/*.swift"
 end
