@@ -13,4 +13,5 @@ Pod::Spec.new do |spec|
   spec.swift_versions = "5"
   spec.source       = { :git => "https://github.com/imgopt/IOClientSwift.git", :tag => "#{spec.version}" }
   spec.source_files  = "Sources/*.swift"
+  spec.deprecated_in_favor_of = "imageOptClient"
 end
