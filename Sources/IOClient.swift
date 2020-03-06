@@ -8,9 +8,9 @@
 
 import Foundation
 import UIKit
-public class IOClient {
+public class IOClient: NSObject {
     
-    class public func constructURL(imageURL:String, imageSize:CGSize, crop:Bool ) -> URL? {
+    @objc class public func constructURL(imageURL:String, imageSize:CGSize, crop:Bool ) -> URL? {
         let scale = UIScreen.main.scale
         
         if (imageSize.width == 0 && imageSize.height == 0 ) {
@@ -31,7 +31,7 @@ public class IOClient {
         return nil
     }
 
-    class public func constructURL(imageURL:String, imageView:UIImageView, crop:Bool, completionHandler: @escaping (_ imageOptURL: URL?) -> Void){
+    @objc class public func constructURL(imageURL:String, imageView:UIImageView, crop:Bool, completionHandler: @escaping (_ imageOptURL: URL?) -> Void){
         DispatchQueue.main.async(execute: {() -> Void in
             let imageOptURL = self.constructURL(imageURL: imageURL, imageSize: imageView.frame.size, crop: crop)
             completionHandler(imageOptURL)
