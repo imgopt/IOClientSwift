@@ -1,11 +1,11 @@
 Pod::Spec.new do |spec|
   spec.name         = "IOClientSwift"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "ImageOpt client library for iOS and tvOS"
   spec.description  = <<-DESC
 	imageOpt client library, to construct parameterized imageOpt URL from plain image URL
                    DESC
-  spec.homepage     = "https://github.com/imgopt/IOClientSwift"
+  spec.homepage     = "https://imageopt.com"
   spec.license      = "MIT"
   spec.author             = { "Bhavesh Bhojani" => "bhavesh@imageopt.com" }
   spec.ios.deployment_target = "9.0"
